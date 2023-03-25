@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <h1>Hypothesis Testing of a normal distribution</h1>
+    <p>Hypothesis Testing</p>
+    <fieldset>
+      <legend>Normal distribution for Null hypothesis</legend>
+      <label>Standard deviation:</label><input id="stddev_slider" type="number" min="0.2" max="2" step="0.1" value="1"><br>
+      <label>Type 1 error (alpha):</label> <input id="alpha_value" type="number" min="0.00" max="1" step="0.01" value="0.05">
+      <label>Show Type 1 error (reject a true claim):</label><input id="vis_outside" type="checkbox">
+    </fieldset>
+    <fieldset>
+      <legend>Distribution for alternate hypothesis</legend>
+      <label>Show alternate distribution:</label><input id="alt_dist" type="checkbox">
+      <form id="f1">
+        <label>Show Type 2 error (fail to reject a false claim):</label><input id="vis_inside" type="checkbox">
+        <label></label>Power of the alternative hypothesis distribution:</label><input id="vis_power" type="checkbox"> <br>
+        <p> The distribution for an alternate hypothesis can be moved sideways by holding down the left button of a mouse/trackpad </p>
+      </form>
+    </fieldset>
+    <div canv1>
+      <canvas id="canvas1" width="800" height="700"></canvas>
+    </div>
+    <script src="jstat.mine.js"></script>
+    <script src="HypothesisTest.js"></script>
+  </body>
+<footer>
+</footer>
+</html>
